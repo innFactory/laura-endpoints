@@ -26,6 +26,16 @@ echo 'export CLOUD_ENDPOINT_CRAWLER="https://crawler.staging.cloud.laura-ai.de/"
 echo 'export UI_ENDPOINT_APP="https://staging.laura-ai.de/" ' >> $BASH_ENV
 echo 'export UI_ENDPOINT_MANAGEMENT="https://management.staging.laura-ai.de" ' >> $BASH_ENV
 
+else 
+# current default is staging
+
+echo 'export CLOUD_ENDPOINT_CMS="https://cms.staging.cloud.laura-ai.de/" ' >> $BASH_ENV
+echo 'export CLOUD_ENDPOINT_DIALOGFLOW="https://dialogflow.staging.cloud.laura-ai.de/" ' >> $BASH_ENV
+echo 'export CLOUD_ENDPOINT_PDF="https://pdf.staging.cloud.laura-ai.de/" ' >> $BASH_ENV
+echo 'export CLOUD_ENDPOINT_CRAWLER="https://crawler.staging.cloud.laura-ai.de/" ' >> $BASH_ENV
+echo 'export UI_ENDPOINT_APP="https://staging.laura-ai.de/" ' >> $BASH_ENV
+echo 'export UI_ENDPOINT_MANAGEMENT="https://management.staging.laura-ai.de" ' >> $BASH_ENV
+
 fi
 
 source $BASH_ENV
