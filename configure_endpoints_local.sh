@@ -25,6 +25,11 @@ touch $BASH_ENV
 export CIRCLE_BRANCH=$branch
 export CIRCLE_SHA1=$version
 
+if [ ! -f "./configure_endpoints.sh" ]
+then
+  wget https://raw.githubusercontent.com/innFactory/laura-endpoints/master/configure_endpoints.sh && chmod +x configure_endpoints.sh
+fi
+
 ./configure_endpoints.sh
 
 . $BASH_ENV
